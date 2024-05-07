@@ -19,8 +19,8 @@ export class AdminService {
   async getTokens(admin: Admin) {
     const payload = {
       id: admin.id,
-      is_active: admin.isActive,
-      is_creator: admin.isCreator,
+      is_active: admin.is_active,
+      is_creator: admin.is_creator,
     };
 
     const [accessToken, refreshToken] = await Promise.all([

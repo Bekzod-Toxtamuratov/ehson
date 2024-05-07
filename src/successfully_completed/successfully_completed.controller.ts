@@ -1,8 +1,9 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, UseGuards } from '@nestjs/common';
 import { SuccessfullyCompletedService } from './successfully_completed.service';
 import { CreateSuccessfullyCompletedDto } from './dto/create-successfully_completed.dto';
 import { UpdateSuccessfullyCompletedDto } from './dto/update-successfully_completed.dto';
 import { ApiTags } from '@nestjs/swagger';
+import { AdminGuard } from '../guards/admin.guard';
 
 
 @ApiTags('successfully-completed')
@@ -11,7 +12,7 @@ export class SuccessfullyCompletedController {
   constructor(
     private readonly successfullyCompletedService: SuccessfullyCompletedService,
   ) {}
-
+  @UseGuards(AdminGuard)
   @Post()
   create(
     @Body() createSuccessfullyCompletedDto: CreateSuccessfullyCompletedDto,
@@ -30,7 +31,7 @@ export class SuccessfullyCompletedController {
   findOne(@Param('id') id: string) {
     return this.successfullyCompletedService.findOne(+id);
   }
-
+  @UseGuards(AdminGuard)
   @Patch(':id')
   update(
     @Param('id') id: string,
@@ -41,7 +42,7 @@ export class SuccessfullyCompletedController {
       updateSuccessfullyCompletedDto,
     );
   }
-
+  @UseGuards(AdminGuard)
   @Delete(':id')
   remove(@Param('id') id: string) {
     return this.successfullyCompletedService.remove(+id);

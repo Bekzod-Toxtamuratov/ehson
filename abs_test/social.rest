@@ -1,4 +1,4 @@
-POST http://95.130.227.160:3300/api/social
+POST http://localhost:3300/api/social
 Content-Type: application/json
 
 {

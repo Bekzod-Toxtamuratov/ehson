@@ -1,16 +1,16 @@
-POST http://localhost:3000/api/users
+POST http://localhost:3300/api/users
 Content-Type: application/json
 
 {
     "full_name": "Muhammadjon Ubaydullayev",
-    "phone": "0000",
+    "phone": "1111",
     "email": "umuhammadjon22@gmail.com",
     "password": "00000",
     "confirm_password": "00000"
 }
 ###
 
-GET http://localhost:3000/api/users/
+GET http://localhost:3300/api/users/
 ###
 
 PATCH http://localhost:3000/api/users/3
@@ -23,10 +23,12 @@ Content-Type: application/json
 }
 ###
 
-DELETE http://localhost:3000/api/users/2
+DELETE http://localhost:3300/api/users/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNfYWN0aXZlIjp0cnVlLCJpYXQiOjE3MTUwNjE0MjksImV4cCI6MTcxNTExNTQyOX0.RMHGrHguIYcrn-5If925wzo4AVWV20pzTHPK0rqMAzI
+
 ###
 
-POST http://localhost:3000/api/users/login
+POST http://localhost:3300/api/users/login
 Content-Type: application/json
 
 {

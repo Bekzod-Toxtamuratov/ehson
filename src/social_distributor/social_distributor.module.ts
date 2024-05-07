@@ -5,9 +5,15 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { SocialDistributor } from './entities/social_distributor.entity';
 import { Social } from '../social/entities/social.entity';
 import { Distributor } from '../distributors/entities/distributor.entity';
+import { JwtModule } from '@nestjs/jwt';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([SocialDistributor]), Social, Distributor],
+  imports: [
+    TypeOrmModule.forFeature([SocialDistributor]),
+    Social,
+    Distributor,
+    JwtModule.register({}),
+  ],
   controllers: [SocialDistributorController],
   providers: [SocialDistributorService],
 })

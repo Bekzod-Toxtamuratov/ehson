@@ -1,15 +1,16 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, UseGuards } from '@nestjs/common';
 import { SocialService } from './social.service';
 import { CreateSocialDto } from './dto/create-social.dto';
 import { UpdateSocialDto } from './dto/update-social.dto';
 import { ApiTags } from '@nestjs/swagger';
+import { AdminGuard } from '../guards/admin.guard';
 
 
 @ApiTags('social')
 @Controller('social')
 export class SocialController {
   constructor(private readonly socialService: SocialService) {}
-
+  @UseGuards(AdminGuard)
   @Post()
   create(@Body() createSocialDto: CreateSocialDto) {
     return this.socialService.create(createSocialDto);
@@ -24,12 +25,12 @@ export class SocialController {
   findOne(@Param('id') id: string) {
     return this.socialService.findOne(+id);
   }
-
+  @UseGuards(AdminGuard)
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateSocialDto: UpdateSocialDto) {
     return this.socialService.update(+id, updateSocialDto);
   }
-
+  @UseGuards(AdminGuard)
   @Delete(':id')
   remove(@Param('id') id: string) {
     return this.socialService.remove(+id);

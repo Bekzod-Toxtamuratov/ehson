@@ -18,7 +18,7 @@ export class Admin {
   password: string;
 
   @ApiProperty({ example: '+998951006671', description: "Admin's phone" })
-  @Column({unique:true})
+  @Column({ unique: true })
   phone: string;
 
   @ApiProperty({
@@ -30,9 +30,9 @@ export class Admin {
 
   @ApiProperty({ description: "Admin's activeness" })
   @Column({ default: true })
-  isActive: boolean;
+  is_active: boolean;
 
   @ApiProperty({ description: "Admin's creatorness" })
   @Column({ default: false })
-  isCreator: boolean;
+  is_creator: boolean;
 }

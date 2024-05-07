@@ -15,6 +15,7 @@ import { UpdateUserCardDto } from './dto/update-user_card.dto';
 import { ApiTags } from '@nestjs/swagger';
 import { UserGuard } from '../guards/user.guard';
 import { Request } from 'express';
+import { AdminGuard } from '../guards/admin.guard';
 
 @ApiTags('user-cards')
 @Controller('user-cards')
@@ -26,17 +27,19 @@ export class UserCardsController {
   create(@Body() createUserCardDto: CreateUserCardDto, @Req() req: Request) {
     return this.userCardsService.create(createUserCardDto, req);
   }
-
+  @UseGuards(UserGuard)
   @Get()
   findAll() {
     return this.userCardsService.findAll();
   }
-
+  
+  @UseGuards(UserGuard)
   @Get(':id')
   findOne(@Param('id') id: string) {
     return this.userCardsService.findOne(+id);
   }
 
+  @UseGuards(UserGuard)
   @Patch(':id')
   update(
     @Param('id') id: string,
@@ -45,6 +48,7 @@ export class UserCardsController {
     return this.userCardsService.update(+id, updateUserCardDto);
   }
 
+  @UseGuards(UserGuard)
   @Delete(':id')
   remove(@Param('id') id: string) {
     return this.userCardsService.remove(+id);
