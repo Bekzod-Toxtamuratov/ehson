@@ -1,4 +1,4 @@
-POST http://localhost:3000/api/social-distributor
+POST http://95.130.227.160:3300/api/social-distributor
 Content-Type: application/json
 
 {
@@ -8,7 +8,7 @@ Content-Type: application/json
 }
 ###
 
-GET http://localhost:3000/api/social-distributor/
+GET http://95.130.227.160:3300/api/social-distributor/
 ###
 
 PATCH http://localhost:3000/api/social-distributor/1

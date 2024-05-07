@@ -1,18 +1,18 @@
-POST http://localhost:3000/api/distributors
+POST http://95.130.227.160:3300/api/distributors
 Content-Type: application/json
 
 {
-    "company_name": "wwww",
-    "email": "charity@gmail.com",
+    "company_name": "hello1world",
+    "email": "charit1y@gmail.com",
     "address": "Tashkent",
-    "phone_number": "+6155618681115",
+    "phone_number": "+656546556763",
     "working_years": 3,
     "license_image":"ika.img",
     "license_number": "998955551000"
 }
 ###
 
-GET http://localhost:3000/api/distributors/
+GET http://95.130.227.160:3300/api/distributors/
 ###
 
 PATCH http://localhost:3000/api/distributors/2

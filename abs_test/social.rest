@@ -1,4 +1,4 @@
-POST http://localhost:3000/api/social
+POST http://95.130.227.160:3300/api/social
 Content-Type: application/json
 
 {
@@ -7,7 +7,7 @@ Content-Type: application/json
 }
 ###
 
-GET http://localhost:3000/api/social/
+GET http://95.130.227.160:3300/api/social/
 ###
 
 PATCH http://localhost:3000/api/social/1
