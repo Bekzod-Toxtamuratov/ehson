@@ -6,7 +6,7 @@ import { ValidationPipe } from '@nestjs/common';
 import { LoggerFactory } from './logger/logger-factory';
 
 async function start() {
-  const PORT = 3000;
+  const PORT = 3300;
   console.log(PORT);
 
   const app = await NestFactory.create(AppModule, {
