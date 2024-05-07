@@ -1,0 +1,28 @@
+POST http://localhost:3000/api/social-distributor
+Content-Type: application/json
+
+{
+    "social_id": 1,
+    "distributor_id":1,
+    "link": "instagram.com/realmuhammadjon"
+}
+###
+
+GET http://localhost:3000/api/social-distributor/
+###
+
+PATCH http://localhost:3000/api/social-distributor/1
+Content-Type: application/json
+
+{
+    "name": "instagram1",
+    "logo": "instagram.png"
+}
+###
+
+DELETE http://localhost:3000/api/social-distributor/1
+
+
+
+
+

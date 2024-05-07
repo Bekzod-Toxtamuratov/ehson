@@ -1,0 +1,35 @@
+POST http://localhost:3000/api/distributors
+Content-Type: application/json
+
+{
+    "company_name": "wwww",
+    "email": "charity@gmail.com",
+    "address": "Tashkent",
+    "phone_number": "+6155618681115",
+    "working_years": 3,
+    "license_image":"ika.img",
+    "license_number": "998955551000"
+}
+###
+
+GET http://localhost:3000/api/distributors/
+###
+
+PATCH http://localhost:3000/api/distributors/2
+Content-Type: application/json
+
+{
+    "company_name": "Activist1",
+    "email": "activist@gmail.com",
+    "address": "Tashkent",
+    "phone_number": "+998955551000",
+    "working_years": 2
+}
+###
+
+DELETE http://localhost:3000/api/distributors/2
+
+
+
+
+

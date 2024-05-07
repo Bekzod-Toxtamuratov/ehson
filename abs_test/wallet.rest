@@ -1,0 +1,31 @@
+POST http://localhost:3000/api/wallet/4
+Content-Type: application/json
+
+{
+    "withdraw_amount": "5000",
+    "withdraw_days": "Juma",
+    "ehson_type_id": 1
+}
+###
+
+GET http://localhost:3000/api/wallet/
+###
+
+PATCH http://localhost:3000/api/wallet/1
+Content-Type: application/json
+
+{
+    "user_cards_id": 4,
+    "balance": "0",
+    "withdraw_amount": "5000",
+    "withdraw_days": "Juma",
+    "ehson_type_id": 1
+}
+###
+
+DELETE http://localhost:3000/api/wallet/2
+
+
+
+
+

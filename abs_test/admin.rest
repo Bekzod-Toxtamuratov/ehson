@@ -1,0 +1,23 @@
+POST http://localhost:3000/api/admin
+Content-Type: application/json
+
+{
+    "name": "Sardor",
+    "password": "uzb3",
+    "confirm_password": "uzb3",
+    "phone": "+52316459982"
+
+}
+###
+
+POST http://localhost:3000/api/admin/login
+Content-Type: application/json
+
+{
+    "phone": "+52316459982",
+    "password": "uzb3"
+
+}
+###
+
+POST http://localhost:3000/api/admin/logout

@@ -1,0 +1,27 @@
+POST http://localhost:3000/api/social
+Content-Type: application/json
+
+{
+    "name": "telegram",
+    "logo": "telegram.png"
+}
+###
+
+GET http://localhost:3000/api/social/
+###
+
+PATCH http://localhost:3000/api/social/1
+Content-Type: application/json
+
+{
+    "name": "instagram1",
+    "logo": "instagram.png"
+}
+###
+
+DELETE http://localhost:3000/api/social/1
+
+
+
+
+
