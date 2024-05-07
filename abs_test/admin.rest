@@ -1,4 +1,4 @@
-POST http://localhost:3300/api/admin
+POST http://95.130.227.160:3300/api/admin
 Content-Type: application/json
 
 {
@@ -10,7 +10,7 @@ Content-Type: application/json
 }
 ###
 
-POST http://localhost:3300/api/admin/login
+POST http://95.130.227.160:3300/api/admin/login
 Content-Type: application/json
 
 {
@@ -21,3 +21,7 @@ Content-Type: application/json
 ###
 
 POST http://localhost:3300/api/admin/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNfYWN0aXZlIjp0cnVlLCJpc19jcmVhdG9yIjpmYWxzZSwiaWF0IjoxNzE1MDYxOTQzLCJleHAiOjE3MTUxMTU5NDN9.pjoyh26762pn1R5Wi0Lgv0BrqwdNg-1fi4ft-tsyXZ0
+###
+
+GET http://95.130.227.160:3300/api/admin/

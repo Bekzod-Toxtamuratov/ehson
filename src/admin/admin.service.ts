@@ -40,6 +40,10 @@ export class AdminService {
     };
   }
 
+  async findAll() {
+    return this.adminModel.find();
+  }
+
   async logout(refreshToken: string, res: Response) {
     try {
       const adminData = await this.jwtService.verify(refreshToken, {

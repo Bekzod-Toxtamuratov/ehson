@@ -1,12 +1,12 @@
-POST http://localhost:3300/api/distributors
+POST http://95.130.227.160:3300/api/distributors
 Content-Type: application/json
-Authorization: Bearer eyJhGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNfYWN0aXZlIjp0cnVlLCJpc19jcmVhdG9yIjpmYWxzZSwiaWF0IjoxNzE1MDYwNTMyLCJleHAiOjE3MTUxMTQ1MzJ9.4GoPN1wmFuoNNSdXi3cg3N6l_K4dRadA9luOOoCuJVk
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaXNfYWN0aXZlIjp0cnVlLCJpc19jcmVhdG9yIjpmYWxzZSwiaWF0IjoxNzE1MDY0MTUxLCJleHAiOjE3MTUxMTgxNTF9.6t1m8zXm-Dcn3LLbS7SHjD9hIIiN-5pjXiFSOauOYPo
 
 {
-    "company_name": "heworl1d",
-    "email": "chariy@gmail.com",
+    "company_name": "oqk",
+    "email": "hello@gmail.com",
     "address": "Tashkent",
-    "phone_number": "+656546763",
+    "phone_number": "+88288",
     "working_years": 3,
     "license_image":"ika.img",
     "license_number": "998955551000"

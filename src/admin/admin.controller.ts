@@ -47,4 +47,11 @@ export class AdminController {
   ) {
     return this.adminService.logout(refreshToken, res);
   }
+
+  @UseGuards(creatorGuard)
+  @UseGuards(AdminGuard)
+  @Get()
+  findAll() {
+    return this.adminService.findAll();
+  }
 }
