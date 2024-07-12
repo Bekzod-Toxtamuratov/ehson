@@ -8,7 +8,9 @@ Content-Type: application/json
 }
 ###
 
-GET http://localhost:3000/api/wallet/
+GET http://localhost:3300/api/wallet/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaXNfYWN0aXZlIjp0cnVlLCJpc19jcmVhdG9yIjpmYWxzZSwiaWF0IjoxNzE1MDY1NjQxLCJleHAiOjE3MTUxMTk2NDF9.5XZpewRcrRaK2p3bfJ4OLaSzYG5eiUhKQzWJXp-3ZR0
+
 ###
 
 PATCH http://localhost:3000/api/wallet/1

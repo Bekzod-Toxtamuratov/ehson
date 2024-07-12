@@ -49,8 +49,8 @@ export class AdminGuard implements CanActivate {
         if (!admin.is_active) {
           throw new UnauthorizedException(`Admin is not active`);
         }
-        console.log('admin  ', admin);
-        req.admin = admin;
+        console.log('admin1  ', admin);
+        req.admin = admin
 
         return true;
       } catch (error) {

@@ -4,7 +4,6 @@ import { Repository } from 'typeorm';
 import { Distributor } from './entities/distributor.entity'; // Assuming you have a Distributor entity
 import { CreateDistributorDto } from './dto/create-distributor.dto';
 import { UpdateDistributorDto } from './dto/update-distributor.dto';
-import e from 'express';
 
 @Injectable()
 export class DistributorsService {

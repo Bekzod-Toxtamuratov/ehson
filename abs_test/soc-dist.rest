@@ -1,5 +1,7 @@
 POST http://95.130.227.160:3300/api/social-distributor
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaXNfYWN0aXZlIjp0cnVlLCJpc19jcmVhdG9yIjpmYWxzZSwiaWF0IjoxNzE1MDY1NjQxLCJleHAiOjE3MTUxMTk2NDF9.5XZpewRcrRaK2p3bfJ4OLaSzYG5eiUhKQzWJXp-3ZR0
+
 
 {
     "social_id": 1,

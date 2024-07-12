@@ -1,4 +1,4 @@
-POST http://localhost:3000/api/replenish-wallet/4/add
+POST http://localhost:3300/api/replenish-wallet/4/add
 Content-Type: application/json
 
 {
@@ -10,10 +10,10 @@ Content-Type: application/json
 
 
 
-POST http://localhost:3000/api/replenish-wallet/check-code
+POST http://localhost:3300/api/replenish-wallet/check-code
 Content-Type: application/json
 
 {
-    "code": "860532"
+    "code": "811403"
 }
 

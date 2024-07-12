@@ -10,7 +10,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNfYWN0a
 }
 ###
 
-GET http://localhost:3000/api/user-cards/
+GET http://localhost:3300/api/user-cards/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaXNfYWN0aXZlIjp0cnVlLCJpc19jcmVhdG9yIjpmYWxzZSwiaWF0IjoxNzE1MDY1NjQxLCJleHAiOjE3MTUxMTk2NDF9.5XZpewRcrRaK2p3bfJ4OLaSzYG5eiUhKQzWJXp-3ZR0
+
 ###
 
 PATCH http://localhost:3000/api/user-cards/1
